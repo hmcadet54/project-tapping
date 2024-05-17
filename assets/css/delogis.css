@@ -16,10 +16,17 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@font-face {
+  font-family: "curve";
+  src: url(/my_assets/fonts/Rockness.otf);
+  /* font-size: large; */
+}
 :root {
   --delogis-font: "Lexend", sans-serif;
-  --delogis-font-two: "Castoro", serif;
+  --delogis-font-two: "curve" ;
   --delogis-font-three: "alagamberegular";
+  --delogis-font-four:  "Zeyada", cursive;
   --delogis-gray: #736b6b;
   --delogis-gray-rgb: 115, 107, 107;
   --delogis-white: #ffffff;
@@ -33,6 +40,11 @@
   --delogis-bdr-color: #ded6d3;
   --delogis-bdr-color-rgb: 222, 214, 211;
   --delogis-bdr-radius: 6px;
+}
+.b
+{
+  border: 1px solid red;
+
 }
 
 .row {
@@ -540,6 +552,7 @@ ul {
   z-index: 5;
 }
 
+
 .main-menu__logo a {
   position: relative;
   display: flex;
@@ -549,6 +562,7 @@ ul {
 }
 
 .main-menu__btn-box {
+  width: auto;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -571,6 +585,7 @@ ul {
 }
 
 .main-menu__btn-box a {
+  width : 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -2251,10 +2266,10 @@ ul {
 
 .main-slider__title {
   position: relative;
-  font-size: 84px;
+  font-size: 60px;
   color: var(--delogis-white);
   font-weight: 400;
-  line-height: 99px;
+  line-height: 75px;
   margin-top: 12px;
   margin-bottom: 18px;
   opacity: 0;
